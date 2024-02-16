@@ -21,7 +21,9 @@ const Formulario = () => {
                 <CampoTexto label="Cargo" placeholder="Digite o seu cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
                 <Dropdown label="Time" itens={times}/>
-                <Botao texto="Criar card"/>
+                <Botao>
+                    Criar Card
+                </Botao>
             </form>
         </section>
     )
