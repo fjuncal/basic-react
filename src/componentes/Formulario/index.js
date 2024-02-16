@@ -18,7 +18,7 @@ const Formulario = () => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [time, setTime] = useState('Programação') //valor Padrão do select
 
 
     const aoSalvar = (evento) => {
