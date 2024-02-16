@@ -4,7 +4,7 @@ import Dropdown from '../Dropdown';
 import Botao from '../Botao';
 import { useState } from 'react';
 
-const Formulario = () => {
+const Formulario = (props) => {
     const times = [
         'Programação',
         'Front-End',
@@ -23,7 +23,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
-        console.log('Form foi submetido => ', nome, cargo, imagem, time)
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
     return (
         <section className='formulario'>
